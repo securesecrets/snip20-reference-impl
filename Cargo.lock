@@ -63,6 +63,7 @@ checksum = "d86b93f97252c47b41663388e6d155714a9d0c398b99f1005cbc5f978b29f445"
 [[package]]
 name = "better-secret-math"
 version = "0.3.0"
+source = "git+https://github.com/securesecrets/shade-plus#44a53b9372a45a10d3d5ff89618d66fefb6ca3a3"
 dependencies = [
  "borsh",
  "btr-macros",
@@ -153,6 +154,7 @@ dependencies = [
 [[package]]
 name = "btr-macros"
 version = "0.1.0"
+source = "git+https://github.com/securesecrets/shade-plus#44a53b9372a45a10d3d5ff89618d66fefb6ca3a3"
 dependencies = [
  "paste",
  "proc-macro2",
@@ -869,6 +871,7 @@ dependencies = [
 [[package]]
 name = "secret-storage-plus"
 version = "0.13.4"
+source = "git+https://github.com/securesecrets/shade-plus#44a53b9372a45a10d3d5ff89618d66fefb6ca3a3"
 dependencies = [
  "bincode2",
  "schemars",
@@ -1070,6 +1073,7 @@ dependencies = [
 [[package]]
 name = "shade-toolkit"
 version = "0.1.0"
+source = "git+https://github.com/securesecrets/shade-plus#44a53b9372a45a10d3d5ff89618d66fefb6ca3a3"
 dependencies = [
  "better-secret-math",
  "borsh",
