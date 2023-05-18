@@ -8,6 +8,19 @@ use crate::batch::HasDecoy;
 use crate::transaction_history::{ExtendedTx, Tx};
 use cosmwasm_std::{Addr, Api, Binary, StdError, StdResult, Uint128};
 use secret_toolkit::permit::Permit;
+use shade_toolkit::{Query, InstantiateCallback, ExecuteCallback, BLOCK_SIZE};
+
+impl Query for QueryMsg {
+    const BLOCK_SIZE: usize = BLOCK_SIZE;
+}
+
+impl InstantiateCallback for InstantiateMsg {
+    const BLOCK_SIZE: usize = BLOCK_SIZE;
+}
+
+impl ExecuteCallback for ExecuteMsg {
+    const BLOCK_SIZE: usize = BLOCK_SIZE;
+}
 
 #[cfg_attr(test, derive(Eq, PartialEq))]
 #[derive(Serialize, Deserialize, Clone, JsonSchema)]
