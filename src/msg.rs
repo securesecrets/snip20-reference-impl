@@ -23,13 +23,13 @@ impl ExecuteCallback for ExecuteMsg {
 }
 
 #[cfg_attr(test, derive(Eq, PartialEq))]
-#[derive(Serialize, Deserialize, Clone, JsonSchema)]
+#[derive(Serialize, Deserialize, Clone, JsonSchema, Debug)]
 pub struct InitialBalance {
     pub address: String,
     pub amount: Uint128,
 }
 
-#[derive(Serialize, Deserialize, JsonSchema)]
+#[derive(Serialize, Deserialize, JsonSchema, Clone, Debug)]
 pub struct InstantiateMsg {
     pub name: String,
     pub admin: Option<String>,
